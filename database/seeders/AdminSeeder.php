@@ -20,7 +20,7 @@ class AdminSeeder extends Seeder
         $user->role_id = 1;
         $user->save();
 
-        $user->admins()->create([
+        $user->admin()->create([
             'admin_role_id' => 1,
             'notify' => 1,
         ]);
